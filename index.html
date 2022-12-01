@@ -13,7 +13,7 @@
     <!-- google fonts link  -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Libre+Franklin&family=Playfair+Display&family=Poppins&display=swap"
+    <link href="https://fonts.googleapis.com/css2?family=Libre+Franklin&family=Playfair+Display&family=Poppins:wght@400;700&display=swap"
         rel="stylesheet">
 
     <!-- css link  -->
@@ -26,8 +26,8 @@
         <!-- navbar section  -->
         <nav>
             <img src="./Images/logo.png" alt="our logo">
-            <div class="menus">
-                <a href="#home">home</a>
+            <div class="navbar-menus">
+                <a href="#home" class="active">home</a>
                 <a href="#about">about</a>
                 <a href="#shop">shop</a>
                 <a href="#contact">contact</a> | 
@@ -56,21 +56,21 @@
         <!-- about page -->
         <div class="about" id="about">
             <p class="subtitle">Product Categories</p>
-            <p class="about-title title">Porcelain <span>&</span>Pottery</p>
+            <p class="about-title title">Porcelain <span>&</span> Pottery</p>
             <div class="about-images">
                 <img src="./Images/about1.png" alt="about page image">
                 <img src="./Images/about2.png" alt="about page image">
                 <img src="./Images/about3.png" alt="about page image">
             </div>
             <div class="about-info">
-                <div class="about-info__left">
-                    <p class="about-info__title">Hand Grafted <br>Pottery since 1990</p>
+                <div>
+                    <p class="about-info__title title">Hand Grafted <br>Pottery since 1990</p>
                     <p class="text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse varius enim in eros elementum. Duis cursus, mi quis
                     viverra ornare, eros dolor interdum nulla, ut commodo diam libero vitae erat. Aenean faucibus nibh et justo cursus id
                     rutrum lorem imperdiet. Nunc ut sem vitae risus posuere.</p>
                 </div>
-                <div class="about-info__right">
-                    <p class="about-info__title">We Provide Premium <br>Pottery Produts</p>
+                <div>
+                    <p class="about-info__title title">We Provide Premium <br>Pottery Produts</p>
                     <p class="text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse varius enim in eros elementum. Duis cursus, mi quis
                     viverra ornare, eros dolor interdum nulla, ut commodo diam libero vitae erat. Aenean faucibus nibh et justo cursus id
                     rutrum lorem imperdiet. Nunc ut sem vitae risus posuere.</p>
@@ -78,10 +78,10 @@
             </div>
         </div>
         <!-- /about page -->
-
+<hr>
         <!-- products page -->
         <div class="products" id="products">
-            <div class="products-box">
+            <div class="products-box1">
                 <img src="./Images/product1.png" alt="products page image">
                 <div class="products-box__info">
                     <p class="products-box__title title">Gold & Black Pottery</p>
@@ -90,7 +90,7 @@
                     <button class="products-box__button">View Details</button>
                 </div>
             </div>
-            <div class="products-box">
+            <div class="products-box2">
                 <div class="products-box__info">
                     <p class="products-box__title title">Orange Ceramic</p>
                     <p class="text">Pri cu dico labores officiis, odio principes complectitur ad sea. Sea id doctus forensibus, nec lorem vocent aliquam eu.
@@ -101,7 +101,7 @@
             </div>
         </div>
         <!-- /products page -->
-
+<hr>
         <!-- shop page  -->
         <div class="shop" id="shop">
             <p class="subtitle">Our online store</p>
@@ -109,32 +109,32 @@
             <div class="shop-box">
                 <div class="shop-box__cart">
                     <img src="./Images/store1.png" alt="shop page images">
-                    <p class="text">Decor Plate</p>
+                    <p class="text card-title">Decor Plate</p>
                     <p class="price">$ 65.00 USD</p>
                 </div>
                 <div class="shop-box__cart">
                     <img src="./Images/store2.png" alt="shop page images">
-                    <p class="text">Mint Pottery</p>
+                    <p class="text card-title">Mint Pottery</p>
                     <p class="price">$ 75.00 USD</p>
                 </div>
                 <div class="shop-box__cart">
                     <img src="./Images/store3.png" alt="shop page images">
-                    <p class="text">Set Of Potterys</p>
+                    <p class="text card-title">Set Of Potterys</p>
                     <p class="price">$ 125.00 USD</p>
                 </div>
                 <div class="shop-box__cart">
                     <img src="./Images/store4.png" alt="shop page images">
-                    <p class="text">Orange Ceramic</p>
+                    <p class="text card-title">Orange Ceramic</p>
                     <p class="price">$ 55.00 USD</p>
                 </div>
                 <div class="shop-box__cart">
                     <img src="./Images/store1.png" alt="shop page images">
-                    <p class="text">Dark Bowl</p>
+                    <p class="text card-title">Dark Bowl</p>
                     <p class="price">$ 115.00 USD</p>
                 </div>
                 <div class="shop-box__cart">
                     <img src="./Images/store1.png" alt="shop page images">
-                    <p class="text">Square Pottery</p>
+                    <p class="text card-title">Square Pottery</p>
                     <p class="price">$ 75.00 USD</p>
                 </div>
             </div>
@@ -146,7 +146,7 @@
         <div class="newCollection">
             <p class="subtitle">Pompeo POttery</p>
             <p class="newCollection-title title">Ready to start shopping?</p>
-            <p class="newCollection-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit . Suspendisse varius enim in eros elementum.</p>
+            <p class="newCollection-text text">Lorem ipsum dolor sit amet,  <span>consectetur adipiscing elit.</span> <br> Suspendisse varius enim in eros elementum.</p>
             <button class="button">New Collection</button>
         </div>
         <!-- /new collection page  -->
@@ -155,13 +155,15 @@
         <div class="contact" id="contact">
             <img src="./Images/telegram.png" alt="telegram icon">
             <p class="subtitle">Latest news</p>
-            <p class="contact-title title">Latest news <span>&</span>New updates</p>
+            <p class="contact-title title">Latest news <span>&</span> New updates</p>
             <form>
-                <input type="text" placeholder="Enter your email">
-                <button>SUBSCRIBE</button>
-                <label for="newstyler">
-                    <input type="checkbox" id="newstyler">Sign up for our newsletter
-                </label>
+                <input type="text" placeholder="Enter your email" class="form-email">
+                <button class="form-button">SUBSCRIBE</button><br>
+                <div class="form-chebox">
+                    <label for="newstyler">
+                        <input type="checkbox" id="newstyler">Sign up for our newsletter
+                    </label>
+                </div>
             </form>
         </div>
         <!-- /contact page  -->
@@ -189,8 +191,8 @@
                 <p class="text">+1 292 345 678</p>
             </div>
         </div>
-        <p><span>Template design by</span> Dorian Hoxha - Image License Info <span>Powered by</span> Webflow</p>
     </footer>
+    <p class="author"><span class="author-mark">Template design by</span> Dorian Hoxha - Image License Info <span class="author-mark">Powered by</span> Webflow</p>
     <!-- /footer secion  -->
 
 

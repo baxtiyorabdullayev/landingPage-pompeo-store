@@ -1,9 +1,319 @@
+/* core styles  ************************************************/
 * {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
 }
 
-/* font-family: 'Libre Franklin', sans-serif;
-font-family: 'Playfair Display', serif;
-font-family: 'Poppins', sans-serif; */
+html {
+  scroll-behavior: smooth;
+}
+
+.subtitle {
+  font-weight: 700;
+  font-size: 14px;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  color: #d77474;
+}
+
+.title {
+  font-weight: 700;
+  color: #000000;
+}
+
+span {
+  font-family: "Playfair Display", serif;
+  font-style: normal;
+  font-size: 68px;
+  line-height: 68px;
+  color: #ac1313;
+}
+
+.text {
+  font-family: "Libre Franklin", sans-serif;
+  font-size: 14px;
+  line-height: 24px;
+  color: #6c6c6c;
+}
+
+.button {
+  margin: 40px 0;
+  padding: 20px 40px;
+  border: none;
+  background-color: #ac1313;
+  font-weight: 700;
+  font-size: 12px;
+  line-height: 22px;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+  color: #ffffff;
+}
+
+/* /core styles  */
+
+/* navbar section  ***********************************************/
+nav {
+  padding: 17px 145px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  position: fixed;
+  width: 100%;
+  height: 90px;
+  background-color: #ffffff;
+}
+
+.navbar-menus a {
+  margin: 0 20px;
+  text-decoration: none;
+  text-transform: uppercase;
+  font-size: 12px;
+  color: rgba(108, 108, 108, 1);
+}
+
+.active {
+  color: rgba(172, 19, 19, 1);
+}
+.navbar-menus a:nth-child(5) {
+  color: rgba(0, 0, 0, 1);
+}
+
+.navbar-menus a i {
+  margin-right: 5px;
+}
+
+/* /navbar section  */
+
+/* home page ************************************************** */
+
+.home {
+  padding: 235px 33px 135px 145px;
+  background-image: url(./Images/home-fon.png);
+  background-size: contain;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.home-info__title {
+  margin-bottom: 20px;
+  font-size: 48px;
+}
+
+.home-info__title span {
+  font-size: 68px;
+}
+/* /home page  */
+
+/* about page ********************************************* */
+.about {
+  padding: 120px 145px;
+  text-align: center;
+}
+
+.about-title {
+  font-size: 50px;
+}
+
+.about-images {
+  margin: 80px 0;
+  display: flex;
+  justify-content: space-between;
+}
+
+.about-info {
+  display: flex;
+  justify-content: space-between;
+}
+
+.about-info div {
+  width: 510px;
+  text-align: left;
+}
+
+.about-info__title {
+  font-size: 29px;
+  margin-bottom: 20px;
+}
+/* /abour page  */
+
+/* products page ************************************************* */
+.products {
+  padding: 80px 145px;
+}
+
+.products-box1 {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+}
+
+.products-box1 img {
+  margin-right: 80px;
+}
+
+.products-box2 {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+}
+
+.products-box2 img {
+  margin-left: 200px;
+}
+
+.products-box__info {
+  width: 395px;
+}
+
+.products-box__title {
+  font-size: 24px;
+  margin-bottom: 20px;
+}
+
+.products-box__button {
+  margin: 20px 0;
+  border: none;
+  background: none;
+  font-weight: 700;
+  font-size: 14px;
+}
+/* /products page  */
+
+/* shop page **************************************** */
+.shop {
+  padding: 145px;
+  text-align: center;
+}
+
+.shop-title {
+  font-size: 40px;
+  margin-top: 20px;
+  margin-bottom: 50px;
+}
+
+.shop-box {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+.shop-box__cart {
+  border-bottom: 1px solid #e4e4e4;
+  margin-bottom: 15px;
+}
+
+.card-title {
+  margin-top: 15px;
+  font-size: 16px;
+  line-height: 26px;
+  text-align: left;
+}
+
+.price {
+  font-size: 14px;
+  text-align: left;
+  margin-bottom: 15px;
+}
+/* /shop page  */
+
+/* new collection page ******************************************* */
+.newCollection {
+  padding: 145px;
+  background-image: url(./Images/new-collection.png);
+  background-repeat: no-repeat;
+  background-size: contain;
+}
+
+.newCollection p:nth-child(1) {
+  font-weight: 400;
+}
+
+.newCollection-title {
+  font-size: 36px;
+}
+
+.newCollection-text {
+  font-size: 16px;
+  font-weight: 600;
+}
+
+.newCollection-text span {
+  font-size: 16px;
+  font-weight: 600;
+  font-family: "Libre Franklin", sans-serif;
+}
+/* /new collection  */
+
+/* .contact page ****************************************** */
+.contact {
+  padding-top: 145px;
+  text-align: center;
+}
+
+.contact p:nth-child(2) {
+  margin: 20px 0;
+  font-weight: 400;
+  font-size: 14px;
+}
+
+.contact-title {
+  font-size: 40px;
+  font-weight: 400;
+}
+
+.form-email {
+  padding: 10px 20px;
+  width: 320px;
+  outline: none;
+}
+
+.form-button {
+  padding: 10px;
+  width: 175px;
+  background-color: #000000;
+  color: #ffffff;
+  border: none;
+}
+
+.form-chebox {
+  margin-top: 30px;
+  color: rgba(161, 161, 161, 1);
+  font-size: 14px;
+}
+/* /contact page  */
+
+/* footer page ***************************** */
+footer {
+  padding: 145px 145px 40px 145px;
+  text-align: center;
+}
+
+footer p {
+  margin: 20px 0;
+}
+
+.footer-box {
+  margin: 70px 0;
+  display: flex;
+  justify-content: space-between;
+}
+
+.footer-box div i {
+  color: #919191;
+  font-size: 36px;
+}
+
+.author {
+  text-align: center;
+  font-size: 12px;
+  background-color: rgba(219, 219, 219, 0.1);
+}
+
+.author-mark {
+  font-size: 12px;
+  color: rgba(108, 108, 108, 1);
+  font-family: "Libre Franklin", sans-serif;
+}
